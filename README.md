@@ -12,8 +12,8 @@ Using the solution of fetch and modern promises, i developed an asynchronous js 
 - Install: npm install
 - Start server: npm run start
 # Usage
-The server will listen on port 3000:
-ID examples: 10001,  90009,  15510
+- The server will listen on port 3000:
+- ID examples: 10001,  90009,  15510
 # Demo Preview
 ![feel-weather-web-app.gif](./ITI%20Community/images/ITI.gif)
 # Table of contents
