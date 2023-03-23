@@ -1,0 +1,296 @@
+/* Loads Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------ Base Rules -------- */
+body {
+    color: var(--text-color);
+    background: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.body-1 {
+    backdrop-filter:blur(4px);
+        background: var(--bg-image-1);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        transition: 0.7s ease;
+}
+
+.body-2 {
+    backdrop-filter:blur(4px);
+    background: var(--bg-image-2);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.body-3 {
+    backdrop-filter:blur(4px);
+    background: var(--bg-image-3);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.body-4 {
+    backdrop-filter:blur(4px);
+    background: var(--bg-image-4);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+/* Typeography General */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root {
+    --bg-image: linear-gradient(90deg, #051a36d7 0%, #4d420b1f 100%),
+    url('images/331742709_562207605850115_3771725780939983242_n.jpg') no-repeat;
+    --bg-image-1:
+    url('https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat;
+    --bg-image-2: linear-gradient(90deg, #051a36a4 0%, #4d420b2d 100%),
+    url('https://images.pexels.com/photos/6789425/pexels-photo-6789425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+    --bg-image-3: linear-gradient(90deg, #051a36a2 0%, #4d420b3d 100%),
+    url('https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+    --bg-image-4: linear-gradient(90deg, #051a36a8 0%, #4d420b50 100%),
+    url('https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=997&q=80') no-repeat;
+    --text-color: #fff;
+}
+
+/* ----- Layout Rules ------ */
+.grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    width: 100%;
+}
+
+/* ----------- Modeule Rules ----------- */
+
+/* Logo Styles */
+.logo {
+    padding: 2em;
+    font-size: 2em;
+    pointer-events: none;
+
+}
+
+.intro {
+    position: absolute;
+    grid-column: 1/3;
+    padding: 11em 1em;
+    font-size: 2.5em;
+    font-weight: 100;
+    pointer-events: none;
+}
+.intro span {
+    font-weight: 300;
+}
+
+/* App input data Styles */
+.app-input-data {
+    background: linear-gradient(180deg, #bf1f216b 0%, #1324443a 100%);
+    box-shadow: 0 16px 36px rgba(255 255 255 0.05);
+    backdrop-filter: blur(3em);
+    grid-column: 3/4;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4.5em 3em;
+    transition: 0.7s ease;
+}
+
+.form {
+width: 100%;
+position: relative;
+height: 3em;
+
+}
+input:-webkit-autofill { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #f0f0f0 !important;
+}
+
+.iti__student__id {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.2em;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+::placeholder {
+    color: #e1e3e4a2;
+    opacity: 0.6;
+}
+
+.error-msg {
+    display: none;
+    pointer-events: none;
+}
+
+.form label {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    color: white;
+    padding: 1.89em;
+    border-top: 1px solid #cfcfcf57;
+}
+
+.student__id__content {
+position: absolute;
+bottom: 1.9em;
+left: 0px;
+font-size: 0.9em;
+font-weight: 300;
+}
+
+.iti-program {
+    width: 100%;
+    position: relative;
+    height: 3em;
+}
+
+.itiProg__entering {
+    width: 100%;
+    height: 100%;
+    padding-top: 2.1em;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+.itiProg__entering::-webkit-resizer {
+    display: none;
+}
+    
+.itiProg__label {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    color: #e1e3e4a2;
+}
+    
+.itiProg__content {
+    position: absolute;
+    bottom: 2em;
+    left: 0px;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: white;
+}
+
+
+/* Entry holder Styles */
+.entry-holder {
+    position: absolute;
+    grid-column: 1/4;
+    pointer-events: none;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10em 7em;
+    transition: 0.7s ease;
+}
+
+.temp {
+    font-weight: 100;
+    font-size: 16.2em;
+    text-align: center;
+}
+
+.digital-clock {
+    font-weight: 100;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.city {
+    font-weight: 300;
+    font-size: 2.6em;
+}
+
+.date {
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.time {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 2.4em;
+    width: 100%;
+    padding-bottom: 1.6em;
+    border-bottom: 1px solid #cfcfcf57;
+}
+
+.content {
+    padding-top: 1em;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+
+button {
+    background: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #e1e3e4a2;
+    transform: translateX(4vw);
+    font-weight: 100;
+}
+
+.arrow {
+    font-size: 0.6em;
+    text-align: center;
+}
+
+button:hover {
+    color: #5fa8d3;
+}
+
+.go-back {
+    position: fixed;
+    color: #f0f0f0;
+    bottom: 2em;
+    right: 10em;
+    display: none;
+}

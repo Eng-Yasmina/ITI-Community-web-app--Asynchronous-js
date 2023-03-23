@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iti_community</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="grid">
+        <p class="logo"><span style="color:#bf272d; font-weight: 900;">ITI</span><br>Community...</p>
+        <p id="intro" class="intro"><span>People</span>  develop countries, so we develop P.E.O.P.L.E</p>
+        <div id="app-input-data" class="app-input-data">
+            <!-- TODO: build the form so that the user can input his ITI's ID -->
+            <div class="form">
+                <input type="text" id="ID" class="iti__student__id" placeholder="enter here">
+                <label class="student__id__label">
+                    <span class="student__id__content">What's your ID number ?</span>
+                </label>
+                <p id="Error" class="error-msg">invalid ID number!</p>
+            </div>
+            <!-- TODO: build an text area to allow the user to write his program-->
+            <div class="iti-program">
+                <textarea id="program" class="itiProg__entering" cols="20" rows="1" placeholder="write here"></textarea>
+                <label class="itiProg__label">
+                    <span class="itiProg__content">Which program at ITI are you enrolled in?</span>
+                </label>
+            </div>
+
+            <!-- TODO: create generate button to generate the data from the server's endpoint object -->
+            <button id="generate" type="submit">Generate <i class="fa-solid fa-arrow-right arrow"></i></button>
+        </div>
+
+        <!-- build output dispaly window -->
+        <div id="entryHolder" class="entry-holder">
+            <div>
+                <div id="city" class="city"></div>
+                <div id="date" class="date"></div>
+                <div id="sample"></div>
+                <div id="description" class="description"></div>
+                <div id="content" class="content"></div>
+            </div>
+            <div>
+                <div id="temp" class="temp"></div>
+                <div id="digital-clock" class="digital-clock"></div>
+            </div>
+        </div>
+        <button id="goBack" class="go-back">Go back <i class="fa-solid fa-arrow-right arrow"></i></button>
+    </div>
+</body>
+</html>
