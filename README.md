@@ -15,7 +15,7 @@ Using the solution of fetch and modern promises, i developed an asynchronous js 
 - The server will listen on port 3000:
 - ID examples: 10001,  90009,  15510
 # Demo Preview
-![iti-web-app.gif](./ITI%20Community/images/ITI.gif)
+![iti-community-web-app.gif](./ITI%20Community/images/ITI.gif)
 # Table of contents
 - [Project Title](#iti-community-web-app)
 - [Scripts](#scripts)
